@@ -3,6 +3,8 @@
 
 This project allows a user to keep track of deadlines for a specific class. By accessing the web application, the user can select a course and see future and past events with the date and a description of the event. They can also download a .ics file (iCalendar) to import all important events into their Google or Outlook calendar.
 
+To access the class, sequence, and use case diagrams, select "Documentation" and then "System Architecture", and select the appropriate page.
+
 **Instructions For Use**
 
 One must first have the following libraries installed on their machine:
@@ -53,23 +55,3 @@ At the top of the course page, you'll see three links.
 
 3. Select browse, and choose the .ics file from the appropriate location on your computer. Select import, and your calendar will now be populated with the events from the file.
 
-**Downloading an ICS file**
-
-```mermaid
-sequenceDiagram
-actor Person
-autonumber
-Person->>Website: Request site index
-Website->>IanAPI: get_syllabi()
-IanAPI->>Website: Return all syllabi
-Website->>Person: Render site index
-Person->>Website: Click a link to a syllabus ID 1
-Website->>IanAPI: get_syllabus(1)
-IanAPI->>Website: Return syllabus
-Website->>Person: Render syllabus page
-Person->>Website: Click "Download ICS"
-Website->>IanAPI: get_syllabus(1)
-IanAPI->>Website: Return syllabus ID 1
-Website->>Person: createCalendar()
-
-```
