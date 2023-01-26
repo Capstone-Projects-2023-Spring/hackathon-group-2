@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+   <title>Syllabus Explorer</title>
+   <link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='index.css')}}">
+</head>
+<body>  
+	<div>
+		<h1>Welcome, {{ user.name }}</h1>
+	</div>
+	<div>
+		<h1>My Syllabi</h1>
+		<ul>
+			{% for s in syllabi %}
+			<li><a href="/syllabus/{{ s.id }}">{{ s.course_name }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</body>
