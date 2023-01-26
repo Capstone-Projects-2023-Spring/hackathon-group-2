@@ -3,7 +3,7 @@
 
 This project allows a user to keep track of deadlines for a specific class. By accessing the web application, the user can select a course and see future and past events with the date and a description of the event. They can also download a .ics file (iCalendar) to import all important events into their Google or Outlook calendar.
 
-To access the class, sequence, and use case diagrams, select "Documentation" and then "System Architecture", and select the appropriate page.
+To access the class and sequence diagrams, select "Documentation" and then "System Architecture", and select the appropriate page.
 
 **Instructions For Use**
 
