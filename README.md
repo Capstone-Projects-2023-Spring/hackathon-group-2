@@ -52,3 +52,24 @@ At the top of the course page, you'll see three links.
 ![image](https://user-images.githubusercontent.com/65423598/213353362-edce9a75-2c06-4f15-9dcc-61866458c28e.png)
 
 3. Select browse, and choose the .ics file from the appropriate location on your computer. Select import, and your calendar will now be populated with the events from the file.
+
+**Downloading an ICS file**
+
+```mermaid
+sequenceDiagram
+actor Person
+autonumber
+Person->>Website: Request site index
+Website->>IanAPI: get_syllabi()
+IanAPI->>Website: Return all syllabi
+Website->>Person: Render site index
+Person->>Website: Click a link to a syllabus ID 1
+Website->>IanAPI: get_syllabus(1)
+IanAPI->>Website: Return syllabus
+Website->>Person: Render syllabus page
+Person->>Website: Click "Download ICS"
+Website->>IanAPI: get_syllabus(1)
+IanAPI->>Website: Return syllabus ID 1
+Website->>Person: createCalendar()
+
+```
