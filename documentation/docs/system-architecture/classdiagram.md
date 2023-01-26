@@ -1,4 +1,4 @@
-'''
+```mermaid
 classDiagram
     web <|-- converter
     web <|-- api
@@ -25,4 +25,4 @@ classDiagram
         +main()
         +Flask app
     }
-'''
+```
