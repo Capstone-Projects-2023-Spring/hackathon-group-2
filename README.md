@@ -1,58 +1,54 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=9890159)
-<div align="center">
+# ICS File Generator
+## Mary, Katrina, Nathaniel, Christine, Harrison
 
-# Project Name
-[![Report Issue on Jira](https://img.shields.io/badge/Report%20Issues-Jira-0052CC?style=flat&logo=jira-software)](https://temple-cis-projects-in-cs.atlassian.net/jira/software/c/projects/DT/issues)
-[![Deploy Docs](https://github.com/ApplebaumIan/tu-cis-4398-docs-template/actions/workflows/deploy.yml/badge.svg)](https://github.com/ApplebaumIan/tu-cis-4398-docs-template/actions/workflows/deploy.yml)
-[![Documentation Website Link](https://img.shields.io/badge/-Documentation%20Website-brightgreen)](https://applebaumian.github.io/tu-cis-4398-docs-template/)
+This project allows a user to keep track of deadlines for a specific class. By accessing the web application, the user can select a course and see future and past events with the date and a description of the event. They can also download a .ics file (iCalendar) to import all important events into their Google or Outlook calendar.
+
+**Instructions For Use**
+
+One must first have the following libraries installed on their machine:
+- ics
+- api
+- flask
+
+To install, use the following terminal command:
+
+pip3 install [name]
+
+Clone the repository and first run api.py. Then run web.py, and access http://127.0.0.1:5000 on your web browser. You now have access to the Syllabus Explorer.
+
+From the homepage, you can select the course for which you want to see due dates. Once you've selected the course, you'll see a page with the current date and time, as well as past and future events in the course. Scrolling through the tables will allow you to see all events in the semester.
+
+At the top of the course page, you'll see three links.
+
+1. Download ICS
+   
+   By clicking this link, a .ics will be downloaded to your machine. This file is compatible with both Google and Outlook calendar apps.
+2. Google Calendar
+   
+   By clicking this link, you will be redirected to Google Calendar, where you can import the .ics file to automatically be added to your calendar.
+3. Outlook Calendar
+   
+   By clicking this link, you will be redirected to Microsoft Calendar, where you can import the .ics file to automatically be added to your calendar.
+   
+**Adding ics file to Google Calendar**
+1. To add the ics file to your Google Calendar, after clicking the link, select the plus sign next to "Other Calendars" on the lower left side of the page.
+
+![image](https://user-images.githubusercontent.com/65423598/213352264-2f0c2af9-aef2-42ef-9e18-80ab0294984c.png)
+
+2. Next, select the "import" option from the dropdown menu.
+ 
+ ![image](https://user-images.githubusercontent.com/65423598/213352399-ec2ee19d-cbba-4701-9694-f3d95c833d3a.png)
+ 
+3. Select the .ics file from the appropriate location on your computer, and select import. Your calendar should now populate with the events from the file!
 
 
-</div>
+**Adding ics file to Outlook Calendar**
+1. To add the ics file to your Outlook Calendar, after clicking the link, select the "Add Calendar" button on the lower left side of the page.
 
+![image](https://user-images.githubusercontent.com/65423598/213353236-dc7a438b-4a29-4516-9426-051f5209bb4c.png)
 
-## Keywords
+2. Next, select the "Upload from file" option in the pop up window.
 
-Section #, as well as any words that quickly give your peers insights into the application like programming language, development platform, type of application, etc.
+![image](https://user-images.githubusercontent.com/65423598/213353362-edce9a75-2c06-4f15-9dcc-61866458c28e.png)
 
-## Project Abstract
-
-This document proposes a novel application of a text message (SMS or Email) read-out and hands-free call interacted between an Android Smartphone and an infotainment platform (headunit) in a car environment. When a phone receives an SMS or Email, the text message is transferred from the phone to the headunit through a Bluetooth connection. On the headunit, user can control which and when the received SMS or E-mail to be read out through the in-vehicle audio system. The user may press one button on the headunit to activate the hands-free feature to call back the SMS sender.
-
-## High Level Requirement
-
-Describe the requirements – i.e., what the product does and how it does it from a user point of view – at a high level.
-
-## Conceptual Design
-
-Describe the initial design concept: Hardware/software architecture, programming language, operating system, etc.
-
-## Background
-
-The background will contain a more detailed description of the product and a comparison to existing similar projects/products. A literature search should be conducted and the results listed. Proper citation of sources is required. If there are similar open-source products, you should state whether existing source will be used and to what extent. If there are similar closed-source/proprietary products, you should state how the proposed product will be similar and different.
-
-## Required Resources
-
-Discuss what you need to develop this project. This includes background information you will need to acquire, hardware resources, and software resources. If these are not part of the standard Computer Science Department lab resources, these must be identified early and discussed with the instructor.
-
-## Collaborators
-
-[//]: # ( readme: collaborators -start )
-<table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/ApplebaumIan">
-            <img src="https://avatars.githubusercontent.com/u/9451941?v=4" width="100;" alt="ApplebaumIan"/>
-            <br />
-            <sub><b>Ian Tyler Applebaum</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/leighflagg">
-            <img src="https://avatars.githubusercontent.com/u/77810293?v=4" width="100;" alt="leighflagg"/>
-            <br />
-            <sub><b>Null</b></sub>
-        </a>
-    </td></tr>
-</table>
-
-[//]: # ( readme: collaborators -end )
+3. Select browse, and choose the .ics file from the appropriate location on your computer. Select import, and your calendar will now be populated with the events from the file.
